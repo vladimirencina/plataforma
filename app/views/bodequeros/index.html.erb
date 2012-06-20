@@ -1,0 +1,27 @@
+<h1>Listing bodequeros</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Pass</th>
+    <th>Fecha</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bodequeros.each do |bodequero| %>
+  <tr>
+    <td><%= bodequero.user %></td>
+    <td><%= bodequero.pass %></td>
+    <td><%= bodequero.fecha %></td>
+    <td><%= link_to 'Show', bodequero %></td>
+    <td><%= link_to 'Edit', edit_bodequero_path(bodequero) %></td>
+    <td><%= link_to 'Destroy', bodequero, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bodequero', new_bodequero_path %>

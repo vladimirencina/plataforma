@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @bodequero.user %>
+</p>
+
+<p>
+  <b>Pass:</b>
+  <%= @bodequero.pass %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @bodequero.fecha %>
+</p>
+
+
+<%= link_to 'Edit', edit_bodequero_path(@bodequero) %> |
+<%= link_to 'Back', bodequeros_path %>

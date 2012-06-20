@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  rut: MyString
+  nombre: MyString
+  apellidoPat: MyString
+  apellidoMat: MyString
+
+two:
+  rut: MyString
+  nombre: MyString
+  apellidoPat: MyString
+  apellidoMat: MyString

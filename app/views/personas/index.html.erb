@@ -1,0 +1,64 @@
+
+
+<section id="content" class="normalpage"><section id="page"><section id="fourcols">
+
+<header class="subhead">
+
+<h2 class="introhead">Lista de personas</h2>
+</header>
+
+<div class="clear"></div>
+<div class="col">
+	
+<h3>Rut</h3>
+</div>
+
+<div class="col">
+<h3>Nombre</h3>
+
+</div>
+
+<div class="col">
+<h3>Apellido Paterno</h3>
+</div>
+
+<div class="col">
+<h3>Apellido Materno</h3>
+</div>
+
+<div class="clear"></div>
+<% @personas.each do |persona| %>
+<div class="clear"></div>
+<div class="col">
+<p><%= persona.rut %><a href="#"></a></p>
+</div>
+
+<div class="col">
+<p><%= persona.nombre %> <a href="#"></a></p>
+</div>
+
+<div class="col">
+<p><%= persona.apellidoPat %><a href="#"></a></p>
+</div>
+
+<div class="col">
+<p><%= persona.apellidoMat %><a href="#"></a></p>
+
+</div>
+
+    <h1><%= link_to 'Mostrar', persona %> | <%= link_to 'Editar', edit_persona_path(persona) %>| <%= link_to 'Eliminar', persona, :confirm => 'Are you sure?', :method => :delete %></h1>
+
+<div class="clear"></div>
+<% end %>
+<%= link_to 'New Persona', new_persona_path %>
+</section>
+
+<article class="post">
+</article>
+</section>
+</section>
+</div>
+
+
+
+

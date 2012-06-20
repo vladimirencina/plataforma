@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  codigoEmpleado: MyString
+  cargo: MyString
+  cantHerramientas: 1
+
+two:
+  codigoEmpleado: MyString
+  cargo: MyString
+  cantHerramientas: 1

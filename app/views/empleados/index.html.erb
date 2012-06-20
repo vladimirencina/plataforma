@@ -1,0 +1,28 @@
+<header class="subhead">
+	<h2 class="introhead"> Lista Empleados</h2>
+</header>
+<table>
+  <tr>
+    <th>Codigoempleado</th>
+    <th>Cargo</th>
+    <th>Cantherramientas</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @empleados.each do |empleado| %>
+  <tr>
+    <td><%= empleado.codigoEmpleado %></td>
+    <td><%= empleado.cargo %></td>
+    <td><%= empleado.cantHerramientas %></td>
+    <td><%= link_to 'Show', empleado %></td>
+    <td><%= link_to 'Edit', edit_empleado_path(empleado) %></td>
+    <td><%= link_to 'Destroy', empleado, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Empleado', new_empleado_path %>
